@@ -9,10 +9,14 @@
  */
 angular.module('yapp')
   .controller('LoginCtrl', function($scope, $location) {
+  	$scope.data = false;
+    $scope.submit = function(valid,data) {
 
-    $scope.submit = function() {
-
-      $location.path('/dashboard');
+		if(valid && data.email == 'admin@diplir.com' && data.password == 'silahkanmasuk123'){
+			$location.path('/dashboard');
+		}else{
+			$scope.data = true;
+		}    
 
       return false;
     }
