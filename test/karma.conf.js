@@ -17,11 +17,17 @@ module.exports = function(config) {
       // bower:js
       '../bower_components/angular/angular.js',
       '../bower_components/angular-mocks/angular-mocks.js',
+<<<<<<< HEAD
       '../bower_components/angular-ui-router/release/angular-ui-router.js',
       '../bower_components/angular-animate/angular-animate.js',
       '../bower_components/satellizer/dist/satellizer.js',
       '../bower_components/chart.js/dist/Chart.js',
       '../bower_components/angular-chart.js/dist/angular-chart.js',
+=======
+      '../bower_components/ui-router/release/angular-ui-router.js',
+      '../bower_components/angular-animate/angular-animate.js',
+      '../bower_components/satellizer/dist/satellizer.js',
+>>>>>>> 9b7a7d23c9420545e8f7315f22c62ff9cbe50c0d
       // endbower
       '../app/scripts/**/*.js',
       //'../test/mock/**/*.js',
