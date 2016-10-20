@@ -1,0 +1,50 @@
+<div>
+	<h2>Setting</h2>
+	<div class="row">
+
+		<div class="col-md-12">
+
+			<div class="panel panel-primary">
+				<div class="panel-body">
+				  <uib-tabset active="active">
+				    <uib-tab index="1" heading="Socials">
+				    	<div class="divider"></div>
+				    	<a class="btn btn-success">Add +</a>
+				    	<hr>
+
+				    	<div class="row">
+				    		<div class="col-md-12 text-center" ng-if="!instagrams.length">
+				    			<h4>No data yet !</h4>
+				    		</div>
+				    		
+				    		<div class="col-md-3" ng-repeat="data in instagrams">
+						    	<div class="panel panel-primary">
+									<div class="panel-body text-center">
+										<h3>Instagram</h3>
+										<hr>
+										<p ng-if="!data.ig_username">Not Connected Yet</p>
+										<p ng-if="data.ig_username">{{ data.ig_username }}</p>
+										<button class="btn btn-info" ng-click="authenticate('instagram')" ng-if="!data.ig_username">Connect</button>
+										<button class="btn btn-warning" ng-if="data.ig_username">Disconnect</button>
+									</div>
+								</div>
+				    		</div>
+
+				    	</div>
+
+
+					</uib-tab>
+				    <uib-tab index="2" heading="Account">
+
+					</uib-tab>
+				    <uib-tab index="3" heading="Security">
+
+					</uib-tab>
+				  </uib-tabset>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+</div>
