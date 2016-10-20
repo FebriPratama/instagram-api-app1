@@ -18,9 +18,9 @@ angular
   ])
   .constant('ApiEndpoint', {
 
-      url: document.location.hostname.indexOf('localhost') > -1 ? 'http://localhost:7000/api/' : 'http://api-febripratama.rhcloud.com/api/',
-      main: document.location.hostname.indexOf('localhost') > -1 ? 'http://localhost:3000/' : 'http://api-febripratama.rhcloud.com',
-      urlAuth : document.location.hostname.indexOf('localhost') > -1 ? 'http://localhost:7000/auth/' : 'http://api-febripratama.rhcloud.com/auth/',
+      url: document.location.hostname.indexOf('localhost') > -1 ? 'http://localhost:7000/api/' : 'https://api-febripratama.rhcloud.com/api/',
+      main: document.location.hostname.indexOf('localhost') > -1 ? 'http://localhost:3000/' : 'https://api-febripratama.rhcloud.com',
+      urlAuth : document.location.hostname.indexOf('localhost') > -1 ? 'http://localhost:7000/auth/' : 'https://api-febripratama.rhcloud.com/auth/',
 
   })
   .config(function($authProvider,ApiEndpoint) {
