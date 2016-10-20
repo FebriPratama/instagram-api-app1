@@ -11,10 +11,7 @@
     "chai": "^2.1.0",
     "connect": "^3.3.4",
     "connect-livereload": "^0.5.3",
-<<<<<<< HEAD
     "express": "~3.4.4",
-=======
->>>>>>> 9b7a7d23c9420545e8f7315f22c62ff9cbe50c0d
     "del": "^1.1.1",
     "gulp": "^3.8.11",
     "gulp-autoprefixer": "^2.1.0",
