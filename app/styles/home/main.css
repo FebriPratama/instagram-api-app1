@@ -6737,7 +6737,8 @@ body {
   top: 0px;
   width: 100%;
   border: none;
-  background-color: transparent !important;
+  background-color: #fff !important;
+  border-radius: 0px;
 }
 .cover .navbar .navbar-nav li.active a {
   background-color: transparent !important;
@@ -6780,6 +6781,10 @@ body {
   height: 200px;
   width: 200px;
 }
-.divider{
-  margin-top: 20px;
+.bg-nav {
+  background: #fff;
+}
+.img-gallery {
+  height: 300px;
+  width: 400px;
 }
